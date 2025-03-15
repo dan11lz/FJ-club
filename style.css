@@ -119,6 +119,7 @@ body {
   width: 393px;
   height: 77px;
   padding: 24px;
+  font-family: "Fira Sans", sans-serif;
   font-size: 24px;
   font-weight: 500;
   color: #ffffff;
@@ -352,6 +353,100 @@ body {
 
 .suffix {
   color: #2b9ccf;
+}
+
+.registration-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.registration-popup__container {
+  width: 620px;
+  height: 701px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+.registration-popup__title {
+  margin: 0;
+  padding-top: 50px;
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+  color: #000000;
+}
+.registration-popup__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+.registration-popup__input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.registration-popup__input-group input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #858585;
+}
+.registration-popup__input {
+  width: 452px;
+  height: 62px;
+  padding: 20px 10px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000000;
+  font-size: 18px;
+}
+.registration-popup__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  width: 452px;
+  height: 40px;
+  margin: 40px 0 16px 0;
+  padding-left: 10px;
+}
+.registration-popup__checkbox input[type=checkbox] {
+  transform: scale(1.5);
+  accent-color: #000000;
+}
+.registration-popup__checkbox-input {
+  cursor: pointer;
+}
+.registration-popup__checkbox-label {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #000000;
+  cursor: pointer;
+}
+.registration-popup__submit {
+  width: 452px;
+  height: 77px;
+  padding: 24px;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  background-color: #fea300;
+  cursor: pointer;
+}
+
+.open {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -13,7 +13,7 @@
       href="https://fonts.gstatic.com"
       crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Schibsted+Grotesk&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=Inter:opsz@14..32&family=Schibsted+Grotesk&display=swap"
       rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -90,7 +90,9 @@
               эллинов
             </h2>
             <p class="program__registration-date">30 марта - 5 апреля</p>
-            <button class="program__registration-btn">
+            <button
+              id="registration-btn"
+              class="program__registration-btn">
               Зарегистрироваться
             </button>
           </div>
@@ -476,6 +478,65 @@
         </div>
       </div>
     </footer>
+    <div
+      id="registration-popup"
+      class="registration-popup">
+      <div class="registration-popup__container">
+        <div class="registration-popup__content">
+          <div class="registration-popup__header">
+            <h2 class="registration-popup__title">Заявка на участие</h2>
+          </div>
+
+          <form
+            id="registration-form"
+            class="registration-popup__form"
+            action="">
+            <div class="registration-popup__input-group">
+              <input
+                class="registration-popup__input"
+                type="text"
+                placeholder="Фамилия Имя" />
+              <input
+                class="registration-popup__input"
+                type="tel"
+                placeholder="Телефон" />
+              <input
+                class="registration-popup__input"
+                type="email"
+                placeholder="E-mail" />
+              <input
+                class="registration-popup__input"
+                type="text"
+                placeholder="Компания" />
+              <input
+                class="registration-popup__input"
+                type="number"
+                placeholder="Количество участников " />
+            </div>
+
+            <div class="registration-popup__checkbox">
+              <input
+                class="registration-popup__checkbox-input"
+                type="checkbox"
+                required
+                id="agreement" />
+              <label
+                class="registration-popup__checkbox-label"
+                for="agreement">
+                Нажимая кнопку Участвовать, подтверждаю согласие на обработку
+                моих персональных данных
+              </label>
+            </div>
+
+            <button
+              class="registration-popup__submit"
+              type="submit">
+              Оставить заявку
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>

@@ -28,3 +28,31 @@ const reviewsSwiper = new Swiper(".reviews-slider", {
     prevEl: ".reviews-prev",
   },
 });
+
+const registrationBtn = document.getElementById("registration-btn");
+const registrationPopup = document.getElementById("registration-popup");
+const registrationForm = document.getElementById("registration-form");
+
+const openPopup = () => {
+  registrationPopup.classList.add("open");
+  document.documentElement.style.overflow = "hidden";
+  document.body.style.overflow = "hidden";
+};
+
+const closePopup = () => {
+  registrationPopup.classList.remove("open");
+  document.documentElement.style.overflow = "";
+  document.body.style.overflow = "";
+  registrationForm.reset();
+};
+
+registrationBtn.addEventListener("click", openPopup);
+
+registrationPopup.addEventListener("click", (e) => {
+  if (e.target === registrationPopup) closePopup();
+});
+
+registrationForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  closePopup();
+});
