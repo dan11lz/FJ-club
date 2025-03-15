@@ -274,4 +274,84 @@ body {
   background-color: #fea300;
 }
 
+.footer {
+  height: 136px;
+  border-top: 2px solid #fea300;
+}
+.footer__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.footer__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.footer__black {
+  height: 88px;
+  background-color: #000000;
+}
+.footer__white {
+  height: 48px;
+  background-color: #ffffff;
+}
+.footer__content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 125px;
+  padding-top: 18px;
+  padding-left: 12px;
+}
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+.footer__contacts-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+  list-style: none;
+}
+.footer__contacts-name {
+  font-weight: 400;
+  font-size: 13px;
+  color: #ffffff;
+}
+.footer__contacts-name, .footer__contacts-phone, .footer__contacts-mail {
+  margin: 0;
+}
+.footer__contacts-phone a, .footer__contacts-mail a {
+  font-weight: 400;
+  font-size: 13px;
+  color: #ffffff;
+}
+.footer__contacts-phone a, .footer__links a {
+  text-decoration: none;
+}
+.footer__links {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-left: 15px;
+  gap: 36px;
+}
+.footer__links a {
+  font-weight: 400;
+  font-size: 10px;
+  color: #000000;
+}
+
+.suffix {
+  color: #2b9ccf;
+}
+
 /*# sourceMappingURL=style.css.map */
