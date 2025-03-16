@@ -168,9 +168,11 @@ body {
   flex-direction: column;
   align-items: flex-end;
   height: 100%;
-  margin-top: 114px;
   gap: 168px;
   z-index: 2;
+}
+.program__registration {
+  padding-top: 114px;
 }
 .program__registration-title {
   margin: 0;
@@ -206,6 +208,75 @@ body {
   color: #ffffff;
 }
 
+@media (max-width: 1320px) {
+  .program__details {
+    padding: 0px 45px;
+  }
+}
+@media (max-width: 1024px) {
+  .program__details {
+    align-items: center;
+  }
+  .program__img {
+    left: -180px;
+  }
+}
+@media (max-width: 768px) {
+  .program__img {
+    left: -260px;
+  }
+}
+@media (max-width: 670px) {
+  .program__img {
+    left: -310px;
+  }
+  .program__registration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .program__registration-title {
+    font-size: 28px;
+  }
+  .program__registration-date {
+    font-size: 20px;
+  }
+  .program__registration-btn {
+    width: 240px;
+    font-size: 18px;
+  }
+  .program__features {
+    font-size: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .program__details {
+    padding: 0px 15px;
+  }
+}
+@media (max-width: 550px) {
+  .program__img {
+    left: -375px;
+  }
+}
+@media (max-width: 480px) {
+  .program__img {
+    left: -410px;
+  }
+}
+@media (max-width: 400px) {
+  .program__img {
+    left: -485px;
+  }
+  .program__registration-title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .program__img {
+    left: -521px;
+  }
+}
 .media-section {
   height: 1453px;
   background-color: #000000;
