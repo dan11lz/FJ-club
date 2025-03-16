@@ -56,3 +56,21 @@ registrationForm.addEventListener("submit", (e) => {
   e.preventDefault();
   closePopup();
 });
+
+// media
+
+const burgerBtn = document.getElementById("burger-menu");
+const navMenu = document.getElementById("header-nav");
+const toggleMenu = () => {
+  burgerBtn.classList.toggle("header__burger_open");
+  navMenu.classList.toggle("header__nav_active");
+};
+
+burgerBtn.addEventListener("click", toggleMenu);
+
+document.addEventListener("click", (e) => {
+  if (!navMenu.contains(e.target) && !burgerBtn.contains(e.target)) {
+    burgerBtn.classList.remove("header__burger_open");
+    navMenu.classList.remove("header__nav_active");
+  }
+});

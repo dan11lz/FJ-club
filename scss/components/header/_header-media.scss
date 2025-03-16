@@ -1,0 +1,51 @@
+@media (max-width: 1320px) {
+  .header {
+    &__container {
+      padding: 0 45px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    &__nav-list {
+      gap: 30px;
+    }
+  }
+}
+
+@media (max-width: 670px) {
+  .header {
+    &__nav {
+      display: none;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      right: 0;
+      background: #000000;
+      padding: 20px 0;
+      z-index: 3;
+
+      &_active {
+        display: block;
+      }
+    }
+    &__nav-list {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      gap: 20px;
+    }
+    &__burger {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    &__container {
+      padding: 0 15px;
+    }
+  }
+}

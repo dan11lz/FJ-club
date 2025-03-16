@@ -11,6 +11,7 @@ html {
 
 body {
   margin: 0;
+  min-width: 320px;
   border: none;
   font-family: "Fira Sans", sans-serif;
 }
@@ -24,6 +25,7 @@ body {
   background-color: #000000;
 }
 .header__container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,7 +62,75 @@ body {
   color: #ffffff;
   text-decoration: none;
 }
+.header__burger {
+  position: relative;
+  display: none;
+  width: 30px;
+  height: 20px;
+  background-color: #000000;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.header__burger span {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background: #ffffff;
+}
+.header__burger span:nth-child(1) {
+  top: 0;
+}
+.header__burger span:nth-child(2) {
+  top: 50%;
+}
+.header__burger span:nth-child(3) {
+  bottom: 0;
+}
+.header__burger_open {
+  transform: rotate(90deg);
+}
 
+@media (max-width: 1320px) {
+  .header__container {
+    padding: 0 45px;
+  }
+}
+@media (max-width: 768px) {
+  .header__nav-list {
+    gap: 30px;
+  }
+}
+@media (max-width: 670px) {
+  .header__nav {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: #000000;
+    padding: 20px 0;
+    z-index: 3;
+  }
+  .header__nav_active {
+    display: block;
+  }
+  .header__nav-list {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 20px;
+  }
+  .header__burger {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .header__container {
+    padding: 0 15px;
+  }
+}
 .program {
   position: relative;
   height: 944px;
