@@ -1,6 +1,7 @@
 const gallerySwiper = new Swiper(".gallery-slider", {
   spaceBetween: -170,
   slidesPerGroup: 3,
+  loop: true,
   pagination: {
     el: ".gallery-pagination",
     clickable: true,
@@ -10,7 +11,7 @@ const gallerySwiper = new Swiper(".gallery-slider", {
     prevEl: ".gallery-prev",
   },
   breakpoints: {
-    1024: {
+    320: {
       slidesPerView: 3,
     },
   },

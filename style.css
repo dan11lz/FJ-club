@@ -416,6 +416,129 @@ body {
   background-color: #fea300;
 }
 
+@media (max-width: 1320px) {
+  .media-section__reviews {
+    margin-top: 44px;
+  }
+  .slider__panel-gallery {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+  .slider__control {
+    padding: 0;
+  }
+  .slider__image {
+    width: 50%;
+  }
+}
+@media (max-width: 1024px) {
+  .slider__list {
+    padding-left: 62px;
+  }
+}
+@media (max-width: 994px) {
+  .reviews-slider {
+    padding: 52px 0 10px;
+  }
+  .slider__item-review {
+    width: 450px;
+  }
+  .review-card {
+    flex-direction: column;
+    height: 600px;
+  }
+}
+@media (max-width: 864px) {
+  .reviews-list {
+    gap: 85px;
+  }
+}
+@media (max-width: 768px) {
+  .media-section__gallery-title h3, .media-section__reviews-title h3 {
+    padding: 100px 0 0 0;
+  }
+  .reviews-list {
+    gap: 55px;
+  }
+}
+@media (max-width: 670px) {
+  .slider__image {
+    width: 45%;
+  }
+  .reviews-list {
+    gap: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .media-section__gallery-title h3, .media-section__reviews-title h3 {
+    font-size: 24px;
+  }
+  .slider__list {
+    padding-left: 30px;
+  }
+  .slider__list_gallery {
+    gap: 10px;
+  }
+  .slider__gallery-btn {
+    font-size: 16px;
+  }
+  .slider__item-review {
+    width: 350px;
+  }
+  .review-card {
+    height: 670px;
+  }
+}
+@media (max-width: 550px) {
+  .slider__image {
+    width: 40%;
+  }
+}
+@media (max-width: 480px) {
+  .media-section__gallery-title h3, .media-section__reviews-title h3 {
+    font-size: 16px;
+  }
+  .slider__image {
+    width: 35%;
+  }
+  .reviews-list {
+    gap: 9px;
+  }
+}
+@media (max-width: 438px) {
+  .slider__list_gallery {
+    gap: 15px;
+  }
+}
+@media (max-width: 380px) {
+  .slider__list_gallery {
+    gap: 22px;
+  }
+}
+@media (max-width: 350px) {
+  .slider__list_gallery {
+    gap: 35px;
+  }
+}
+@media (max-width: 320px) {
+  .reviews-slider {
+    padding: 52px 0 20px 0;
+  }
+  .slider__list {
+    padding-left: 10px;
+  }
+  .slider__item-review {
+    width: 280px;
+  }
+  .review-card {
+    height: 720px;
+  }
+  .reviews-list {
+    gap: 3px;
+  }
+}
 .footer {
   height: 136px;
   border-top: 2px solid #fea300;

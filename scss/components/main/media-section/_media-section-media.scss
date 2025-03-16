@@ -1,0 +1,184 @@
+@media (max-width: 1320px) {
+  .media-section {
+    &__reviews {
+      margin-top: 44px;
+    }
+  }
+
+  .slider {
+    &__panel-gallery {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 20px;
+    }
+
+    &__control {
+      padding: 0;
+    }
+
+    &__image {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .slider {
+    &__list {
+      padding-left: 62px;
+    }
+  }
+}
+
+@media (max-width: 994px) {
+  .reviews-slider {
+    padding: 52px 0 10px;
+  }
+
+  .slider {
+    &__item-review {
+      width: 450px;
+    }
+  }
+
+  .review-card {
+    flex-direction: column;
+    height: 600px;
+  }
+}
+
+@media (max-width: 864px) {
+  .reviews-list {
+    gap: 85px;
+  }
+}
+
+@media (max-width: 768px) {
+  .media-section {
+    &__gallery-title,
+    &__reviews-title {
+      h3 {
+        padding: 100px 0 0 0;
+      }
+    }
+  }
+
+  .reviews-list {
+    gap: 55px;
+  }
+}
+
+@media (max-width: 670px) {
+  .slider__image {
+    width: 45%;
+  }
+
+  .reviews-list {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .media-section {
+    &__gallery-title,
+    &__reviews-title {
+      h3 {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .slider {
+    &__list {
+      padding-left: 30px;
+    }
+
+    &__list_gallery {
+      gap: 10px;
+    }
+
+    &__gallery-btn {
+      font-size: 16px;
+    }
+
+    &__item-review {
+      width: 350px;
+    }
+  }
+
+  .review-card {
+    height: 670px;
+  }
+}
+
+@media (max-width: 550px) {
+  .slider__image {
+    width: 40%;
+  }
+}
+
+@media (max-width: 480px) {
+  .media-section {
+    &__gallery-title,
+    &__reviews-title {
+      h3 {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .slider__image {
+    width: 35%;
+  }
+
+  .reviews-list {
+    gap: 9px;
+  }
+}
+
+@media (max-width: 438px) {
+  .slider {
+    &__list_gallery {
+      gap: 15px;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .slider {
+    &__list_gallery {
+      gap: 22px;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .slider {
+    &__list_gallery {
+      gap: 35px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .reviews-slider {
+    padding: 52px 0 20px 0;
+  }
+
+  .slider__list {
+    padding-left: 10px;
+  }
+
+  .slider__item-review {
+    width: 280px;
+  }
+
+  .review-card {
+    height: 720px;
+  }
+
+  .reviews-list {
+    gap: 3px;
+  }
+}
