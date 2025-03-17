@@ -768,4 +768,40 @@ body {
   display: flex;
 }
 
+@media (max-width: 640px) {
+  .registration-popup__container {
+    width: 440px;
+  }
+  .registration-popup__input {
+    width: 340px;
+  }
+  .registration-popup__checkbox {
+    width: 340px;
+    height: 45px;
+  }
+  .registration-popup__submit {
+    width: 340px;
+  }
+}
+@media (max-width: 480px) {
+  .registration-popup__container {
+    width: 260px;
+  }
+  .registration-popup__title {
+    font-size: 20px;
+  }
+  .registration-popup__input {
+    width: 220px;
+  }
+  .registration-popup__checkbox {
+    width: 220px;
+    height: 60px;
+    margin: 40px 0 30px 0;
+  }
+  .registration-popup__submit {
+    width: 220px;
+    font-size: 18px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

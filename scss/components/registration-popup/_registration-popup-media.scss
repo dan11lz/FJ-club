@@ -1,0 +1,47 @@
+@media (max-width: 640px) {
+  .registration-popup {
+    &__container {
+      width: 440px;
+    }
+
+    &__input {
+      width: 340px;
+    }
+
+    &__checkbox {
+      width: 340px;
+      height: 45px;
+    }
+
+    &__submit {
+      width: 340px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .registration-popup {
+    &__container {
+      width: 260px;
+    }
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__input {
+      width: 220px;
+    }
+
+    &__checkbox {
+      width: 220px;
+      height: 60px;
+      margin: 40px 0 30px 0;
+    }
+
+    &__submit {
+      width: 220px;
+      font-size: 18px;
+    }
+  }
+}
