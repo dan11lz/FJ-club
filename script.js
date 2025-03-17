@@ -62,6 +62,7 @@ registrationForm.addEventListener("submit", (e) => {
 
 const burgerBtn = document.getElementById("burger-menu");
 const navMenu = document.getElementById("header-nav");
+const headerNavLinks = document.querySelectorAll(".header__nav-link");
 const toggleMenu = () => {
   burgerBtn.classList.toggle("header__burger_open");
   navMenu.classList.toggle("header__nav_active");
@@ -74,4 +75,11 @@ document.addEventListener("click", (e) => {
     burgerBtn.classList.remove("header__burger_open");
     navMenu.classList.remove("header__nav_active");
   }
+});
+
+headerNavLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    burgerBtn.classList.remove("header__burger_open");
+    navMenu.classList.remove("header__nav_active");
+  });
 });
